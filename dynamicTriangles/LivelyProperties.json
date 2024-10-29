@@ -1,0 +1,98 @@
+{
+    "label1": {
+        "type": "label",
+        "value": "Mesh"
+    },
+    "meshAmbient": {
+        "text": "Ambient",
+        "type": "color",
+        "value": "#3300FF"
+    },
+    "meshDiffuse": {
+        "text": "Diffuse",
+        "type": "color",
+        "value": "#FFFFFF"
+    },
+    "meshSlices": {
+        "max": 800,
+        "min": 1,
+        "tick": 800,
+        "text": "Slices",
+        "type": "slider",
+        "value": 350.0
+    },
+    "label2": {
+        "type": "label",
+        "value": "Light"
+    },
+    "lightAmbient": {
+        "text": "Ambient",
+        "type": "color",
+        "value": "#999999"
+    },
+    "lightDiffuse": {
+        "text": "Diffuse",
+        "type": "color",
+        "value": "#33CCFF"
+    },
+    "lightDistance": {
+        "max": 1000,
+        "min": 0,
+        "tick": 1001,
+        "text": "Distance",
+        "type": "slider",
+        "value": 300
+    },
+    "label3": {
+        "type": "label",
+        "value": "Vertices Movement"
+    },
+    "movementSpeed": {
+        "max": 300,
+        "min": 0,
+        "text": "Speed",
+        "type": "slider",
+        "value": 50
+    },
+    "movementDistance": {
+        "max": 500,
+        "min": 0,
+        "text": "Maximum distance",
+        "type": "slider",
+        "value": 200
+    },
+    "movementRandomness": {
+        "max": 100,
+        "min": 0,
+        "text": "Randomness",
+        "type": "slider",
+        "value": 10
+    },
+    "label4": {
+        "type": "label",
+        "value": "Triangle Borders"
+    },
+    "borderColor": {
+        "max": 100,
+        "min": 0,
+        "text": "Color",
+        "type": "color",
+        "value": "#000000"
+    },
+    "borderOpacity": {
+        "max": 100,
+        "min": 0,
+        "text": "Opacity",
+        "type": "slider",
+        "value": 100
+    },
+    "label5": {
+        "type": "label",
+        "value": "Mouse"
+    },
+    "detectMouse": {
+        "text": "Detect",
+        "type": "checkbox",
+        "value": true
+    }
+}

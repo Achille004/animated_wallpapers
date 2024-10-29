@@ -1,0 +1,13 @@
+{
+    "AppVersion": "1.0.0.0",
+    "Title": "Dynamic Triangles",
+    "Thumbnail": "thumbnail.png",
+    "Preview": "preview.gif",
+    "Desc": "Dynamic triangles generator with light gradient from the bottom.",
+    "Author": "Francesco Marras",
+    "License": "MIT",
+    "Contact": "2004marras@gmail.com",
+    "Type": 1,
+    "FileName": "src/dynamicTriangles.html",
+    "Arguments": null
+}
