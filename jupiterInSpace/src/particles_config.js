@@ -1,13 +1,17 @@
-(async () => {
+flickering = true;
+count = 2000;
+loadParticles()
+
+async function loadParticles() {
     await tsParticles.load({
         id: "tsparticles",
         options: {
             preset: "stars",
 
             background: {
-                color: "#000",
-                image: "url('https://static.vecteezy.com/system/resources/previews/009/806/968/large_2x/panorama-milky-way-galaxy-with-stars-and-space-dust-in-the-universe-long-exposuregraph-with-grain-free-photo.jpg')",
-                size: "cover"
+                color: "transparent",
+                image: "url('milkyway.jpg')",
+                size: "cover",
             },
             fpsLimit: 60,
             particles: {
@@ -28,7 +32,7 @@
                     density: {
                         enable: true,
                     },
-                    value: 2000
+                    value: count
                 },
                 opacity: {
                     value: {
@@ -37,7 +41,7 @@
                     },
                     animation: {
                         count: 0,
-                        enable: true,
+                        enable: flickering,
                         speed: 5,
                         decay: 0,
                         delay: 0,
@@ -51,12 +55,22 @@
                     value: {
                         min: 0.2,
                         max: 1.2
-                    },
-                    animation: {
-                        enable: false
                     }
                 }
             }
         }
     });
-})();
+}
+
+// lively fns
+function livelyPropertyListener(name, val) {
+    switch (name) {
+        case "count":
+            count = Number(val);
+            break;
+        case "flickering":
+            flickering = Boolean(val);
+            break;
+    }
+    loadParticles()
+}
